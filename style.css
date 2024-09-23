@@ -1,0 +1,322 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0;
+    box-sizing: border-box; /* Tính padding và border vào trong kích thước phần tử */
+    background-color: #f0f0f000;
+}
+header {
+    padding: 0.1px;
+    position: sticky; /* Giúp cố định khi cuộn */
+    top: 0; /* Vị trí cố định ở đầu trang */
+    z-index: 1000; /* Đảm bảo header luôn ở trên cùng */
+    display: flex;
+    justify-content: space-between; /* Căn giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.site-title {
+    font-size: 18px; /* Thay đổi kích thước chữ tại đây */
+    color: #017de9
+}
+
+.logo-title {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-left: 50px; /* Dịch logo sang phải một chút */
+    margin-top: 10px; /* Tạo khoảng cách trên cùng */
+    background-color: #0688f311; /* Màu nền cho logo và tên web */
+    padding: 5px; /* Khoảng cách bên trong */
+    border-radius: 20px; /* Bo góc cho nền */
+    width: 145px; /* Chiều rộng của nền */
+    height: 30px; /* Chiều cao của nền */
+}
+
+.logo {
+    width: 33px; /* Thay đổi kích thước logo nếu cần */
+    margin-right: 10px; /* Khoảng cách giữa logo và tên */
+}
+
+nav {
+    margin-top: 20px;
+    margin-left: 200px; /* Khoảng cách bên trái cho nav */
+    background-color: #0688f311; /* Màu nền cho toàn bộ menu */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 20px; /* Bo góc cho nền */
+}
+
+nav ul {
+    list-style-type: none; /* Bỏ dấu chấm trước các mục */
+    display: flex; /* Căn giữa các phần tử trong nav */
+    padding: 0; /* Bỏ padding của ul */
+    margin: 0; /* Bỏ margin của ul */
+}
+
+nav ul li {
+    margin: 0 15px; /* Khoảng cách giữa các mục menu */
+    font-weight: bolder;
+
+}
+
+nav ul li a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: rgb(0, 0, 0); /* Màu chữ */
+    padding: 10px 15px; /* Khoảng cách bên trong */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    
+}
+
+nav ul li a:hover {
+    background-color: #d0d0d0; /* Màu nền khi hover */
+}
+.hero {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử ngang hàng */
+    justify-content: space-between; /* Căn hai phần tử con cách đều hai bên */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 6vh; /* Chiều cao của hero bằng 90% viewport */
+}
+.container {
+    max-width: 00px; /* Ví dụ: giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa container */
+  }
+.content-container {
+    display: flex; /* Sử dụng flexbox để sắp xếp phần ảnh và thanh tìm kiếm */
+    justify-content: space-between; /* Khoảng cách giữa ảnh và thanh tìm kiếm */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+}
+
+
+.img-container img {
+    margin-top: 25px;
+    margin-left: 170px;
+    width: 600px;
+    height: auto;
+}    
+
+.search-container {
+    flex: 1; /* Để search-container chiếm 1 phần flex */
+    text-align: right; /* Căn nội dung của container sang bên phải */
+    margin-top: -250px; /* Giảm giá trị để kéo phần tử lên trên */
+    transform: translate(-10%, -50%);
+
+}
+
+.search-container input {
+    text-align: center;
+    padding: 10px;
+    width: 300px; /* Kích thước cho khung tìm kiếm */
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px solid #0094f7;
+    font-family: Times, 'Times New Roman', serif;
+
+}
+
+.welcome-text {
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 50px;
+  margin-right: -950px; /* Adjust margins as needed */
+  font-weight: bolder;
+  font-family: revert;
+  color: #0094f7;
+}
+
+footer {
+    position: relative; /* Giữ footer ở cuối trang (có thể dùng fixed nếu muốn cố định) */
+    bottom: 0; /* Đảm bảo footer luôn ở phía cuối */
+    left: 0;
+    width: 100%; /* Đảm bảo footer chiếm toàn bộ chiều rộng */
+    background-color: #f1f1f1; /* Màu nền của footer */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 0px; /* Khoảng cách bên trong */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Font chữ */
+}
+
+.subject-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 150px;
+  }
+  
+  .subject {
+    width: calc(33.33% - 60px);
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(173, 39, 39, 0.1);
+    text-align: center;
+    padding: 20px;
+    background-color: #0688f311; /* Nền trắng */
+  }
+  
+  .subject img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    border-radius: 35px;
+
+  }
+  
+  .subject h3 {
+    margin-bottom: 5px;
+  }
+  
+  /* Hiệu ứng khi hover */
+  .subject:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+/* ABOUTTTTTTTTTTTTTTTTTTTTT */
+
+/* Banner Section */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.banner-image img {
+    margin-top: 30px;
+    margin-left: 25px;
+    max-width: 650px;
+    border-radius: 30px;
+}
+
+.banner-text {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.banner-text h1 {
+    color: #000000;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.banner-text h2 {
+    color: #1672f2;
+    font-size: 32px;
+    text-align: center;
+    margin-top: -20px;
+
+}
+
+.banner-text p {
+    font-size: 18px;
+    text-indent: 40px;
+    margin-top: 12px;
+    line-height: 1.4;
+
+}
+
+._courses {
+    color: #0246a5;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: -12%;
+}
+
+.heading_courses {
+    color: #0246a5;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: -12%;
+}
+
+.subject-link {
+    display: block; /* Đảm bảo thẻ <a> chiếm toàn bộ không gian giống như <div> */
+    text-decoration: none; /* Bỏ gạch chân mặc định của thẻ <a> */
+    color: inherit; /* Đảm bảo màu văn bản không bị thay đổi */
+}
+
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-width: 200px;
+    background-color: white;
+}
+
+.suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+
+.section {
+    background: #35a1ef11;
+    border: 1px solid #96cbff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.section:hover {
+    background: #f9f9f9;
+}
+
+.course-title {
+    font-size: 2.5em; /* Kích thước chữ lớn */
+    color: #046bd1; /* Màu chữ */
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    font-family: revert;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Đổ bóng cho chữ */
+}
+
+.section h2 {
+    cursor: pointer;
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.chapter-list {
+    list-style-type: none;
+    padding-left: 10;
+}
+
+.chapter-list li {
+    padding: 10px 0;
+    color: #34495e;
+    cursor: pointer;
+}
+
+.lesson-list {
+    list-style-type: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.lesson-list li {
+    padding: 5px 0;
+    color: #7f8c8d;
+}
+
+
